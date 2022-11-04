@@ -1,0 +1,55 @@
+* {
+    background-color: #4A5159;
+    margin: 0 0 0 0;
+}
+
+.h1 {
+    color:#730237;
+    font-size: 50px;
+    font-family: Arial;
+    font-style: italic;
+    position: absolute;
+}
+
+.h2 {
+    color: #730237;
+    font-family: Arial;
+}
+
+.section {
+    margin-top: 200px;
+    font-size: 25px;
+    position: absolute;
+}
+
+.nav {
+    margin-top: 5%;
+    text-align: right;
+    margin-right: 35%;
+}
+
+.aside {
+    margin-top: 0;
+}
+
+.figure {
+    width: 70%;
+    height: 925px;
+}
+
+.div-principal {
+    display: flex;
+}
+
+.form {
+    position: absolute;
+}
+
+.input {
+    margin-top: 25%;
+    box-sizing: border-box;
+    background-color: white;
+    width: 275px;
+    height: 50px;
+    border-radius: 50px;
+}
