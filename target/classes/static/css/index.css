@@ -1,19 +1,19 @@
 * {
     background-color: #4A5159;
     margin: 0 0 0 0;
+    font-family: Arial;
 }
 
 .h1 {
     color:#730237;
     font-size: 50px;
-    font-family: Arial;
     font-style: italic;
     position: absolute;
 }
 
 .h2 {
     color: #730237;
-    font-family: Arial;
+
 }
 
 .section {
@@ -22,7 +22,7 @@
     position: absolute;
 }
 
-.nav {
+.div-secundario {
     margin-top: 5%;
     text-align: right;
     margin-right: 35%;
@@ -30,6 +30,7 @@
 
 .aside {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .figure {
@@ -52,4 +53,62 @@
     width: 275px;
     height: 50px;
     border-radius: 50px;
+}
+
+
+.iniciar-sesion {
+    margin-top: 600px;
+    background-color: black;
+    box-sizing: border-box;
+    width: 275px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50px;
+    text-align: center;
+    color: #730237;
+}
+
+
+#p {
+    margin-left: 50px;
+    color: #730237;
+    position: absolute;
+    margin-top: 665px;
+}
+
+.crear-cuenta {
+    margin-left: 50px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-top: 700px;
+    width: 160px;
+    height: 40px;
+    position: absolute;
+}
+
+.a {
+    text-align: center;
+    line-height: 40px;
+    background-color: black;
+    color: #730237;
+    text-decoration: none;
+}
+
+.a2 {
+    text-align: center;
+    line-height: 50px;
+    background-color: black;
+    color: #730237;
+    text-decoration: none;
+}
+
+.a2:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+
+.a:hover {
+    background-color: gray;
+    transition: 0.5s;
 }
