@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>VistaDental</title>
+        <meta charset="UTF-8">
+        <link href="/css/nuevoTratamiento.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <nav>
+            <h1 class="h1"> Vista Dental </h1>
+        </nav>
+        <section>
+            <form th:action="@{/tratamiento/guardar}" method="post" th:object="${tratamiento}" class="form">
+                <label for="nombre">
+                    <h2 class="h2"> Nombre Tratamiento </h2>
+                </label>
+                <input class="input" type="text" name="nombre" placeholder="Nombre Tratamiento" th:field="*{nombre}">
+                <label for="costo">
+                    <h2 class="h2"> Costo </h2>
+                </label>
+                <input class="input" type="number" name="costo" placeholder="Costo" th:field="*{costo}">
+                <label for="imagen">
+                    <h2 class="h2"> Imagen </h2>
+                </label>
+                
+                <input id="file" type="file"  th:field="*{imagen}" accept="image/x-png,image/gif,image/jpeg">
+                
+                <br/>
+                <input class="subir" type="submit" name="subir" >
+            </form>
+        </section>
+    </body>
+</html>

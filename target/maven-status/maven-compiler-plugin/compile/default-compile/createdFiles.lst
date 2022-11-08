@@ -1,3 +1,12 @@
-com\vistaDental\controller\UsuarioController.class
+com\vistaDental\domain\Cliente.class
+com\vistaDental\controller\ClienteController.class
+com\vistaDental\domain\Tratamiento.class
+com\vistaDental\service\ClienteServiceImpl.class
+com\vistaDental\service\ClienteService.class
+com\vistaDental\dao\TratamientoDao.class
+com\vistaDental\controller\TratamientoController.class
+com\vistaDental\service\TratamientoService.class
 com\vistaDental\VistalDentalApplication.class
 com\vistaDental\controller\IndexController.class
+com\vistaDental\dao\ClienteDao.class
+com\vistaDental\service\TratamientoServiceImpl.class

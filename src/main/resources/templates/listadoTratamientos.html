@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>VistaDental</title>
+        <meta charset="UTF-8">
+        <link href="/css/listadoTratamientos.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <nav>
+            <h1 class="h1"> Vista Dental </h1>
+        </nav>
+        <section class="section">
+            <h2 class="h2"> Bienvenido estimado: Admin </h2>
+
+            <br/> <br/> <br/>
+            <h2 class="h2"> Tratamientos Registrados </h2>
+            <table class="table">
+                <tr>
+                    <td class="td"> Nombre </td>
+                    <td class="td"> Costo </td>
+                    <td class="td"> Imagen </td>
+                    <td class="td"> ID </td>
+                </tr>
+                <tr th:each="tratamiento : ${tratamientos}">
+                    <td  class="td"> [[${tratamiento.nombre}]] </td>
+                    <td class="td"> [[${tratamiento.costo}]] </td>
+                    <td class="td">  [[${tratamiento.imagen}]]</td>
+                    <td class="td">  [[${tratamiento.idTratamiento}]]</td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>

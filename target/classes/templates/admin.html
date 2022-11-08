@@ -16,42 +16,38 @@
             <h2 class="h2"> Usuario Registrados </h2>
 
             <table class="table">
-                <tr class="table">
+                <tr>
                     <td class="td"> Nombre </td>
                     <td class="td"> Primer Apellido </td>
                     <td class="td"> Segundo Apellido </td>
                     <td class="td"> Usuario </td>
                     <td class="td"> Contraseña </td> 
                     <td class="td"> Correo </td>
-                    <td class="td"> Citas Pendiente </td>
+                    <td class="td"> Teléfono </td>
                     <td class="td"> ID </td>
                 </tr>
-                <tr class="table">
-                    <td class="td">  </td>
-                    <td class="td">  </td>
-                    <td class="td">  </td>
-                    <td class="td">  </td>
-                    <td class="td">  </td> 
-                    <td class="td">  </td>
-                    <td class="td">  </td>
-                    <td class="td">  </td>
+                <tr th:each="cliente : ${clientes}">
+                    <td class="td"> [[${cliente.nombre}]] </td>
+                    <td class="td"> [[${cliente.primerApellido}]] </td>
+                    <td class="td"> [[${cliente.segundoApellido}]] </td>
+                    <td class="td"> [[${cliente.usuario}]] </td>
+                    <td class="td"> [[${cliente.contra}]] </td> 
+                    <td class="td">  [[${cliente.correo}]] </td>
+                    <td class="td">  [[${cliente.telefono}]]</td>
+                    <td class="td">  [[${cliente.idCliente}]]</td>
                 </tr>
             </table>
 
-
         </section>
         <footer id="footer">
-            <div class="div-tratamiento">
 
-            </div>
+            <a class="a" th:href="@{/tratamiento/listado}"> Ver tratamientos </a>
 
-            <div class="div-tratamiento">
+            <a class="a" th:href="@{/tratamiento/nuevo}"> Nuevo Tratamiento </a>
 
-            </div>
+            <a class="a" th:href="@{/tratamiento/nuevo}"> Modificar Tratamiento </a>
 
-            <div class="div-tratamiento">
-
-            </div>
+            <a class="a" th:href="@{/tratamiento/nuevo}"> Eliminar Tratamiento </a>
         </footer>
 
     </body>

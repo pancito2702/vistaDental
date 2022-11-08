@@ -1,0 +1,58 @@
+
+* {
+    background-color: #4A5159;
+    margin: 0 0 0 0;
+    font-family: Arial;
+}
+
+.h1 {
+    color:#730237;
+    font-size: 50px;
+    text-align: left;
+    font-style: italic;
+}
+
+.h2 {
+    font-size: 35px;
+    margin-top: 45px;
+    color:#730237;
+    text-align: center;
+    font-style: italic;
+}
+
+.form {
+    text-align: center;
+}
+
+.input {
+    margin-top: 45px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 275px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+
+
+#file {
+    margin-top: 45px;
+
+}
+
+
+.subir {
+    margin-top: 45px;
+    box-sizing: border-box;
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    color:white;
+    border-radius: 50px;
+    border: none;
+}
+
+.subir:hover {
+    background-color: grey;
+}
+
