@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>VistaDental</title>
+        <meta charset="UTF-8">
+        <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="div-principal">
+            <div>  
+                <aside class="aside">
+                    <figure>
+                        <img class="figure" src="images/dentista.jpg" alt="No se puede mostrar la imagen"/>
+                    </figure>
+
+                </aside>
+            </div>
+            <div class="div-secundario">
+                <nav>
+                    <h1 class="h1">Vista Dental</h1>
+                </nav>
+                <section class="section">
+                    <h2 class="h2"> Inicio de Sesión  </h2>
+
+                    <form class="form">
+                        <label for="usuario">
+                            <input class="input" type="text" name="usuario" placeholder="Usuario">
+                        </label>
+
+                        <label for="contra">
+                            <input class="input" type="text" name="contra" placeholder="Contraseña">
+                        </label>
+                    </form>
+                </section>
+                <section>
+
+                    <a class="a2 iniciar-sesion" th:href="@{/admin}"> Iniciar Sesión  </a> 
+                    <p id="p"> ¿No tiene una cuenta? </p>
+
+                    <a class="a crear-cuenta" th:href="@{/cliente/nuevo}"> Registrarse </a>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
