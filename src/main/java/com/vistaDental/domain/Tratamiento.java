@@ -30,12 +30,12 @@ public class Tratamiento implements Serializable {
 
     @Lob
     @Column(name = "imagen")
-    private byte[] imagen;
+    private String imagen;
 
     public Tratamiento() {
     }
 
-    public Tratamiento(String nombre, double costo, byte[] imagen) {
+    public Tratamiento(String nombre, double costo, String imagen) {
         this.nombre = nombre;
         this.costo = costo;
         this.imagen = imagen;

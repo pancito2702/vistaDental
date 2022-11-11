@@ -26,7 +26,7 @@ public class ClienteController {
 
     @GetMapping("/cliente/nuevo")
     public String nuevoCliente(Cliente cliente) {
-        return "nuevoCliente";
+        return "/cliente/nuevoCliente";
     }
 
     @PostMapping("/cliente/guardar")

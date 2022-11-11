@@ -37,3 +37,36 @@
     height: 40px;
     background-color: white;
 }
+
+.image {
+    width: 250px;
+    height: 200px;
+}
+
+.footer {
+    text-align: center;
+
+}
+
+.a-padre {
+    border-radius: 50px;
+    margin-top: 10px;
+    width: 160px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+
+}
+
+.a {
+    text-align: center;
+    line-height: 40px;
+    color: #730237;
+    text-decoration: none;
+}
+
+
+.a:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
