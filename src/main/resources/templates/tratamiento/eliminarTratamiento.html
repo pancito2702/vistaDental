@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>VistaDental</title>
+        <meta charset="UTF-8">
+        <link href="/css/eliminarTratamiento.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav>
+            <h1 class="h1"> [[#{aplicacion.titulo}]] </h1>
+        </nav>
+        <section class="section">
+            <h2 class="h2"> [[#{tratamiento.eliminar}]]</h2>
+            <table class="table">
+                <tr>
+                    <td class="td"> [[#{tratamiento.nombre}]] </td>
+                    <td class="td"> [[#{tratamiento.id}]] </td>
+                    <td class="td"> [[#{accion.eliminar}]] </td>
+                </tr>
+                <tr th:each="tratamiento : ${tratamientos}">
+                    <td class="td"> [[${tratamiento.nombre}]] </td>
+                    <td class="td">  [[${tratamiento.idTratamiento}]]</td>
+                    <td class="td a-td">  <a class="a" th:href="@{/tratamiento/eliminar/} + ${tratamiento.idTratamiento}"> [[#{accion.eliminar}]] </a> </td>
+                </tr>
+            </table>
+            <footer class="footer">
+                <a id="a-regresar" th:href="@{/admin}"> [[#{accion.regresar}]] </a>
+            </footer>
+        </section>
+
+    </body>
+</html>

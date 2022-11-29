@@ -1,0 +1,97 @@
+* {
+    background-color: #4A5159;
+    margin: 0 0 0 0;
+    font-family: Arial;
+}
+
+.h1 {
+    color:#730237;
+    font-size: 50px;
+    text-align: left;
+    font-style: italic;
+}
+
+.section {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.h2 {
+    color:#730237;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.table {
+    margin-top: 20px;
+    border-color: #4A5159;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.td {
+    border-right: 10px;
+    border-style: ridge;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+}
+
+.a {
+    width: 90px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    background-color: black;
+    color: #730237;
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+}
+
+.a-special {
+    height: 205px;
+    display: flex;
+    align-items: center;
+}
+
+.a:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+
+
+.footer {
+    text-align: center;
+}
+
+#a-regresar {
+    width: 90px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    background-color: black;
+    color: #730237;
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    position: absolute;
+}
+
+#a-regresar:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.image {
+    width: 250px;
+    height: 200px;
+}
+

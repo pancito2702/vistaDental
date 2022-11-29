@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>VistaDental</title>
+        <meta charset="UTF-8">
+        <link href="/css/editarTratamiento.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav>
+            <h1 class="h1"> [[#{aplicacion.titulo}]] </h1>
+        </nav>
+        <section>
+            <form th:action="@{/tratamiento/guardar}" method="post" th:object="${tratamiento}" class="form" enctype="multipart/form-data">
+                <input type="hidden" name="idTratamiento" th:field="*{idTratamiento}">
+                <label for="nombre">
+                    <h2 class="h2"> [[#{tratamiento.editar.nombre}]] </h2>
+                </label>
+                <input class="input" type="text" name="nombre" placeholder="Nombre Tratamiento" th:field="*{nombre}" required="true">
+                <label for="costo">
+                    <h2 class="h2"> [[#{tratamiento.editar.costo}]]  </h2>
+                </label>
+                <input class="input" type="number" name="costo" placeholder="Costo" th:field="*{costo}" required="true">
+                <label for="imagen">
+                    <h2 class="h2"> [[#{tratamiento.editar.imagen}]] </h2>
+                </label>
+                <figure>
+                    <img class="img" th:src="*{imagen}" alt="No se puede cargar la imagen">
+                </figure>
+                
+                <input id="file" type="file" name="archivo" accept="image/x-png,image/gif,image/jpeg" required="true">
+                
+                <br/>
+                <input class="subir" type="submit" name="subir" th:value="Subir">
+            </form>
+        </section>
+    </body>
+</html>

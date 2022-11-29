@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>VistaDental</title>
+        <meta charset="UTF-8">
+        <link href="/css/modificarTratamiento.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav>
+            <h1 class="h1"> [[#{aplicacion.titulo}]]</h1>
+        </nav>
+        <section class="section">
+            <h2 class="h2"> [[#{tratamiento.modificar}]] </h2>
+            <table class="table">
+                <tr>
+                    <td class="td"> [[#{tratamiento.nombre}]]  </td>
+                    <td class="td"> [[#{tratamiento.costo}]]</td>
+                    <td class="td"> [[#{tratamiento.imagen}]] </td>
+                    <td class="td"> [[#{tratamiento.id}]]</td>
+                    <td class="td"> [[#{accion.modificar}]] </td>
+                </tr>
+                <tr th:each="tratamiento : ${tratamientos}">
+                    <td class="td"> [[${tratamiento.nombre}]] </td>
+                    <td class="td">  [[${tratamiento.costo}]]</td>
+                    <td class="td">    
+                        <img class="image" th:src="${tratamiento.imagen}" alt="No se puede cargar la imagen"/> 
+                    </td>
+                    <td class="td">  [[${tratamiento.idTratamiento}]]</td>
+                    <td class="td a-special">  <a class="a" th:href="@{/tratamiento/modificar/} + ${tratamiento.idTratamiento}"> [[#{accion.modificar}]] </a> </td>
+                </tr>
+            </table>
+            <br/>
+            <footer class="footer">
+                <a id="a-regresar" th:href="@{/admin}"> [[#{accion.regresar}]] </a>
+            </footer>
+        </section>
+
+
+    </body>
+</html>

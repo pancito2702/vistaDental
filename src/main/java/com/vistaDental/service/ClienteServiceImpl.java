@@ -37,4 +37,6 @@ public class ClienteServiceImpl implements ClienteService {
         clienteDao.delete(cliente);
     }
 
+   
+
 }

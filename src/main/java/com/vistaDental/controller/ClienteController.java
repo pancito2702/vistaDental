@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @Slf4j
@@ -30,9 +31,8 @@ public class ClienteController {
     }
 
     @PostMapping("/cliente/guardar")
-    public String guardarCliente(Cliente cliente) {
+    public String guardarCliente(Cliente cliente, @RequestParam("Usuario") String usuario, Model model) {
         clienteService.save(cliente);
         return "redirect:/";
     }
-
 }

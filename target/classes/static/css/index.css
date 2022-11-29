@@ -35,7 +35,7 @@
 
 .figure {
     width: 70%;
-    height: 925px;
+    height: 1080px;
 }
 
 .div-principal {
@@ -50,7 +50,7 @@
     margin-top: 25%;
     box-sizing: border-box;
     background-color: white;
-    width: 275px;
+    width: 250px;
     height: 50px;
     border-radius: 50px;
 }
@@ -112,3 +112,24 @@
     background-color: gray;
     transition: 0.5s;
 }
+
+.div-user-icon {
+    align-items: center;
+    display: flex;
+}
+
+.user-icon {
+    margin-right: 10px;
+    margin-top: 82px;
+}
+
+.div-pass-icon {
+    align-items: center;
+    display: flex;
+}
+
+.pass-icon {
+    margin-right: 10px;
+    margin-top: 82px;
+}
+

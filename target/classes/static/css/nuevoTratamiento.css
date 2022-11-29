@@ -50,9 +50,11 @@
     color:white;
     border-radius: 50px;
     border: none;
+    margin-bottom: 200px;
 }
 
 .subir:hover {
     background-color: grey;
 }
+
 
