@@ -70,7 +70,8 @@
 
 
 #p {
-    margin-left: 50px;
+    margin-left: 44px;
+    margin-right: 44px;
     color: #730237;
     position: absolute;
     margin-top: 665px;
@@ -131,5 +132,25 @@
 .pass-icon {
     margin-right: 10px;
     margin-top: 82px;
+}
+
+
+
+
+#footer-lenguage {
+
+    text-align: center;
+    background-color: black;
+}
+
+.a-lenguage {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.a3:hover {
+    background-color: gray;
+    transition: 0.5s;
 }
 

@@ -2,20 +2,19 @@
 <!--
 
 -->
-<html>
-    <head>
+<html 
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns="http://www.w3.org/1999/xhtml">
+    <head th:fragment="head">
         <title>VistaDental</title>
         <meta charset="UTF-8">
-        
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"*>
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"*>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
     </head>
     <body>
-        <footer th:fragment="footer" style="text-align: center; background-color: black">
-                <a  th:href="@{/(lang=es)}" 
-                    style="text-decoration: none; color:white; background-color: black"> 
-                    ES </a> | 
-                <a  th:href="@{/(lang=en)}" 
-                    style="text-decoration: none; color:white; background-color: black"> 
-                    EN </a>
-        </footer>
+        
     </body>
 </html>

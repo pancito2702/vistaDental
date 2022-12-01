@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>VistaDental</title>
         <meta charset="UTF-8">
-        <link href="/css/eliminarTratamiento.css" rel="stylesheet" type="text/css"/>
+            <link href="/css/eliminarTratamiento.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <nav>
@@ -24,10 +25,13 @@
                     <td class="td a-td">  <a class="a" th:href="@{/tratamiento/eliminar/} + ${tratamiento.idTratamiento}"> [[#{accion.eliminar}]] </a> </td>
                 </tr>
             </table>
-            <footer class="footer">
+            <section class="section2">
                 <a id="a-regresar" th:href="@{/admin}"> [[#{accion.regresar}]] </a>
-            </footer>
+            </section>
         </section>
-
+        <footer id="footer-lenguage">
+            <a  class="a-lenguage a3" th:href="@{/(lang=es)}" > ES </a> 
+            <a  class="a-lenguage a3" th:href="@{/(lang=en)}"> EN </a>
+        </footer>
     </body>
 </html>

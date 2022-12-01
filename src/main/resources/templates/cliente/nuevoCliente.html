@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>VistaDental</title>
         <meta charset="UTF-8">
@@ -41,11 +42,12 @@
                 <input class="input" type="tel" name="Tel" th:placeholder="#{cliente.telefono}" th:field="*{telefono}" required="true">
                 <br/>
                 <input class="subir" type="submit" th:name="#{accion.enviar}">
-                <footer th:replace="layout/plantilla :: footer">
-
-                </footer>
+                
             </form>  
-
+            <footer id="footer-lenguage">
+                <a  class="a-lenguage a3" th:href="@{/(lang=es)}" > ES </a> 
+                <a  class="a-lenguage a3" th:href="@{/(lang=en)}"> EN </a>
+            </footer>
         </section>
     </body>
 </html>

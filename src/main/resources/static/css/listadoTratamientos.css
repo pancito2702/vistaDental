@@ -43,7 +43,7 @@
     height: 200px;
 }
 
-.footer {
+.section2 {
     text-align: center;
 
 }
@@ -67,6 +67,22 @@
 
 
 .a:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+#footer-lenguage {
+    margin-top: 220px;
+    text-align: center;
+    background-color: black;
+}
+
+.a-lenguage {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.a3:hover {
     background-color: gray;
     transition: 0.5s;
 }

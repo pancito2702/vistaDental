@@ -1,3 +1,4 @@
+com\vistaDental\WebConfig.class
 com\vistaDental\domain\Cliente.class
 com\vistaDental\controller\ClienteController.class
 com\vistaDental\domain\Tratamiento.class

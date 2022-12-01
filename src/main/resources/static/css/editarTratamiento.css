@@ -61,3 +61,20 @@
 .subir:hover {
     background-color: grey;
 }
+
+#footer-lenguage {
+   margin-top: 95px;
+   text-align: center;
+   background-color: black;
+}
+
+.a-lenguage {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.a3:hover {
+    background-color: gray;
+    transition: 0.5s;
+}

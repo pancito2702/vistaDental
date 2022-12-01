@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>VistaDental</title>
         <meta charset="UTF-8">
@@ -47,9 +48,11 @@
                     <a class="a crear-cuenta" th:href="@{/cliente/nuevo}"> [[#{accion.registrarse}]] </a>
                 </section>
             </div>
-        </div>
-        <footer th:replace="layout/plantilla :: footer" style="margin-top: 775px">
 
+        </div>
+        <footer id="footer-lenguage">
+                <a  class="a-lenguage a3" th:href="@{/(lang=es)}" > ES </a> 
+                <a  class="a-lenguage a3" th:href="@{/(lang=en)}"> EN </a>
         </footer>
     </body>
 

@@ -62,7 +62,7 @@
     transition: 0.5s;
 }
 
-.footer {
+.section2 {
     text-align: center;
 }
 
@@ -83,6 +83,23 @@
 }
 
 #a-regresar:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+#footer-lenguage {
+    margin-top: 600px;
+    text-align: center;
+    background-color: black;
+}
+
+.a-lenguage {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.a3:hover {
     background-color: gray;
     transition: 0.5s;
 }

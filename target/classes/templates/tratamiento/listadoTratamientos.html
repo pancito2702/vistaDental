@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>VistaDental</title>
         <meta charset="UTF-8">
-        <link href="/css/listadoTratamientos.css" rel="stylesheet" type="text/css"/>
+            <link href="/css/listadoTratamientos.css" rel="stylesheet" type="text/css"/>
 
     </head>
     <body>
@@ -36,9 +37,14 @@
             <br/>
 
         </section>
-        <footer class="footer">
+        <section class="section2">
             <a class="a-padre a" th:href="@{/admin}"> [[#{accion.regresar}]] </a>
-        </footer>
+        </section>
+
         <br/> <br/> <br/> <br/> 
+        <footer id="footer-lenguage">
+            <a  class="a-lenguage a3" th:href="@{/(lang=es)}" > ES </a> 
+            <a  class="a-lenguage a3" th:href="@{/(lang=en)}"> EN </a>
+        </footer>
     </body>
 </html>
