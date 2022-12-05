@@ -7,100 +7,48 @@
 .h1 {
     color:#730237;
     font-size: 50px;
+    text-align: left;
     font-style: italic;
-    position: absolute;
-}
-
-.h2 {
-    color: #730237;
-
 }
 
 .section {
-    margin-top: 200px;
-    font-size: 25px;
-    position: absolute;
+    margin-top: 40px;
 }
 
-.div-secundario {
-    margin-top: 5%;
-    text-align: right;
-    margin-right: 35%;
+.h2 {
+    text-align: center;
+    font-style: italic;
+    color: #730237;
 }
 
-.aside {
-    margin-top: 0;
-    margin-bottom: 0;
+.tratamiento-disponible {
+    margin-top: 40px;
+    color: #730237;
+    font-size: 40px;
+    text-align: center;
 }
 
-.figure {
-    width: 70%;
-    height: 1080px;
-}
-
-.div-principal {
+.nav {
     display: flex;
 }
 
-.form {
-    position: absolute;
-}
-
-.input {
-    margin-top: 25%;
-    box-sizing: border-box;
-    background-color: white;
-    width: 250px;
-    height: 50px;
-    border-radius: 50px;
-}
-
-
-.iniciar-sesion {
-    margin-top: 600px;
-    background-color: black;
-    box-sizing: border-box;
-    width: 275px;
-    height: 50px;
-    position: absolute;
-    border-radius: 50px;
-    text-align: center;
-    color: #730237;
-}
-
-
-#p {
-    margin-left: 44px;
-    margin-right: 44px;
-    color: #730237;
-    position: absolute;
-    margin-top: 665px;
-}
-
-.crear-cuenta {
-    margin-left: 50px;
-    box-sizing: border-box;
-    border-radius: 50px;
-    margin-top: 700px;
-    width: 160px;
-    height: 40px;
-    position: absolute;
-}
-
-.a {
-    text-align: center;
-    line-height: 40px;
-    background-color: black;
-    color: #730237;
-    text-decoration: none;
-}
 
 .a2 {
-    text-align: center;
-    line-height: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
     background-color: black;
-    color: #730237;
+    width: 275px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
     text-decoration: none;
+    line-height: 50px;
+    color: #730237;
+    position: absolute;
+}
+.icon {
+    background-color: black;
 }
 
 .a2:hover {
@@ -109,48 +57,56 @@
 }
 
 
+
+
+.table {
+    margin-top: 20px;
+    border-color: #4A5159;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.td-image {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 50px;
+
+}
+
+.td {
+
+    border-right: 10px;
+    border-style: ridge;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+
+}
+
+#section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 35px;
+    background-color: black;
+    width: 275px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: #730237;
+}
+
 .a:hover {
     background-color: gray;
     transition: 0.5s;
 }
-
-.div-user-icon {
-    align-items: center;
-    display: flex;
-}
-
-.user-icon {
-    margin-right: 10px;
-    margin-top: 82px;
-}
-
-.div-pass-icon {
-    align-items: center;
-    display: flex;
-}
-
-.pass-icon {
-    margin-right: 10px;
-    margin-top: 82px;
-}
-
-
-
-
-#footer-lenguage {
-
-    text-align: center;
-    background-color: black;
-}
-
-.a-lenguage {
-    text-decoration: none;
-    color: white;
-    background-color: black;
-}
-
-.a3:hover {
-    background-color: gray;
-    transition: 0.5s;
-}
-

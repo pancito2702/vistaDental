@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://thymeleaf.org/extras/spring-security">
+    <head>
+        <title>VistaDental</title>
+        <meta charset="UTF-8">
+        <link href="css/login.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"*>
+    </head>
+    <body>
+        <div class="div-principal">
+            <div>  
+                <aside class="aside">
+                    <figure>
+                        <img class="figure" src="images/dentista.jpg" alt="No se puede mostrar la imagen"/>
+                    </figure>
+
+                </aside>
+            </div>
+            <div class="div-secundario">
+                <nav>
+                    <h1 class="h1"> [[#{aplicacion.titulo}]] </h1>
+                </nav>
+                <section class="section">
+                    <h2 class="h2"> [[#{index.inicio.sesion}]] </h2>
+
+                    <form class="form" method="post" th:action="@{/login}">
+                        <label for="login">  
+                            <div class="div-user-icon">
+                                <i class="fa fa-user fa-lg user-icon" aria-hidden="true"></i>
+                                <input class="input" type="text" name="username" th:placeholder="#{cliente.usuario}">
+                            </div>
+                        </label>
+
+                        <label for="contra">
+                            <div class="div-pass-icon">
+                                <i class="fa fa-lock fa-lg pass-icon" aria-hidden="true"></i>
+                                <input class="input" type="text" name="password" th:placeholder="#{cliente.contra}">
+                            </div>
+                        </label>
+                        <button class="button" type="submit">
+                            [[#{index.inicio.sesion}]]
+                        </button>
+                    </form>
+                </section>
+                <section>
+                  
+                    <p id="p"> [[#{index.no.tiene}]] </p>
+
+                    <a class="a crear-cuenta" th:href="@{/cliente/nuevo}"> [[#{accion.registrarse}]] </a>
+                </section>
+            </div>
+
+        </div>
+        <footer id="footer-lenguage">
+                <a  class="a-lenguage a3" th:href="@{/(lang=es)}" > ES </a> 
+                <a  class="a-lenguage a3" th:href="@{/(lang=en)}"> EN </a>
+        </footer>
+    </body>
+
+</html>
