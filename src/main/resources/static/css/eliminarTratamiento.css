@@ -99,6 +99,31 @@
     background-color: black;
 }
 
+
+.nav {
+    display: flex;
+}
+
+.a3 {
+    margin-top: 10px;
+    margin-left: 305px;
+    background-color: black;
+    width: 275px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: #730237;
+    position: absolute;
+}
+
+.a-lenguage:hover{
+    background-color: gray;
+    transition: 0.5s;
+}
+
 .a3:hover {
     background-color: gray;
     transition: 0.5s;

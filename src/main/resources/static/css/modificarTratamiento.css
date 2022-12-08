@@ -64,31 +64,10 @@
     transition: 0.5s;
 }
 
-
-
-.section2 {
-    text-align: center;
+.nav {
+    display: flex;
 }
 
-#a-regresar {
-    width: 90px;
-    height: 40px;
-    box-sizing: border-box;
-    border-radius: 50px;
-    text-align: center;
-    line-height: 40px;
-    background-color: black;
-    color: #730237;
-    text-decoration: none;
-    margin-left: 30px;
-    color: white;
-    position: absolute;
-}
-
-#a-regresar:hover {
-    background-color: gray;
-    transition: 0.5s;
-}
 
 .image {
     width: 250px;
@@ -107,8 +86,27 @@
     background-color: black;
 }
 
-.a3:hover {
+.a3 {
+    margin-top: 10px;
+    margin-left: 305px;
+    background-color: black;
+    width: 275px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: #730237;
+    position: absolute;
+}
+
+.a-lenguage:hover{
     background-color: gray;
     transition: 0.5s;
 }
 
+.a3:hover {
+    background-color: gray;
+    transition: 0.5s;
+}

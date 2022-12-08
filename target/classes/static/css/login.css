@@ -100,11 +100,11 @@
     box-sizing: border-box;
     border-radius: 50px;
     margin-top: 100px;
-    margin-right: 100px;
+    margin-right: 85px;
     line-height: 50px;
+    width: 150px;
     background-color: black;
     color: #730237;
-
     text-decoration: none;
 }
 

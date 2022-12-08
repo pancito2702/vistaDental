@@ -29,6 +29,10 @@
 
 }
 
+.nav {
+    display: flex;
+}
+
 .td {
     border-right: 10px;
     border-style: ridge;
@@ -43,33 +47,7 @@
     height: 200px;
 }
 
-.section2 {
-    text-align: center;
 
-}
-
-.a-padre {
-    border-radius: 50px;
-    margin-top: 10px;
-    width: 160px;
-    height: 40px;
-    background-color: black;
-    position: absolute;
-
-}
-
-.a {
-    text-align: center;
-    line-height: 40px;
-    color: white;
-    text-decoration: none;
-}
-
-
-.a:hover {
-    background-color: gray;
-    transition: 0.5s;
-}
 #footer-lenguage {
     margin-top: 220px;
     text-align: center;
@@ -82,7 +60,27 @@
     background-color: black;
 }
 
+.a3 {
+    margin-top: 10px;
+    margin-left: 305px;
+    background-color: black;
+    width: 275px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: #730237;
+    position: absolute;
+}
+
 .a3:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.a-lenguage:hover {
     background-color: gray;
     transition: 0.5s;
 }

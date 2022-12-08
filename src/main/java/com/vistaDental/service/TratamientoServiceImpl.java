@@ -36,5 +36,6 @@ public class TratamientoServiceImpl implements TratamientoService {
     public void delete(Tratamiento tratamiento) {
         tratamientoDao.delete(tratamiento);
     }
+    
 
 }

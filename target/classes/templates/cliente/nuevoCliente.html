@@ -14,10 +14,16 @@
         </nav>
         <section>
             <form class="form" th:action="@{/cliente/guardar}"  method="post" th:object="${cliente}">
+
+            
+                 
                 <i class="fa fa-user fa-xl"  aria-hidden="true"></i>
                 <input class="input" type="text" name="Usuario" id="Usuario" th:placeholder="#{cliente.usuario}" required="true">
+                
                 <br/>
+                
 
+                
                 <i class="fa fa-envelope fa-xl" aria-hidden="true"></i>
                 <input class="input" type="email" name="Correo" th:placeholder="#{cliente.correo}" th:field="*{correo}" required="true">
                 <br/>
@@ -35,7 +41,7 @@
                 <br/>
 
                 <i class="fa fa-lock fa-xl"  aria-hidden="true"></i>
-                <input class="input" type="text" name="Contra" th:placeholder="#{cliente.contra}" th:field="*{contra}" required="true">
+                <input class="input" type="text" name="contra" th:placeholder="#{cliente.contra}" th:field="*{contra}" required="true">
                 <br/>
 
                 <i class="fa fa-phone fa-xl" aria-hidden="true"></i>

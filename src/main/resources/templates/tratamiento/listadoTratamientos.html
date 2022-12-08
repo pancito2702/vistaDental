@@ -9,8 +9,11 @@
 
     </head>
     <body>
-        <nav>
+        <nav class="nav">
             <h1 class="h1"> Vista Dental </h1>
+            <a th:href="@{/admin}" class="a3">
+                [[#{accion.regresar}]]
+            </a>
         </nav>
         <section class="section">
             <h2 class="h2"> [[#{admin.bienvenido}]] </h2>
@@ -35,16 +38,13 @@
 
             </table>
             <br/>
+        </section>
 
-        </section>
-        <section class="section2">
-            <a class="a-padre a" th:href="@{/admin}"> [[#{accion.regresar}]] </a>
-        </section>
 
         <br/> <br/> <br/> <br/> 
         <footer id="footer-lenguage">
-            <a  class="a-lenguage a3" th:href="@{/(lang=es)}" > ES </a> 
-            <a  class="a-lenguage a3" th:href="@{/(lang=en)}"> EN </a>
+            <a  class="a-lenguage" th:href="@{/(lang=es)}" > ES </a> 
+            <a  class="a-lenguage" th:href="@{/(lang=en)}"> EN </a>
         </footer>
     </body>
 </html>

@@ -8,8 +8,11 @@
         <link href="/css/editarTratamiento.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <nav>
+        <nav class="nav">
             <h1 class="h1"> [[#{aplicacion.titulo}]] </h1>
+             <a th:href="@{/tratamiento/modificar}" class="a3">
+                [[#{accion.regresar}]]
+            </a>
         </nav>
         <section>
             <form th:action="@{/tratamiento/guardar}" method="post" th:object="${tratamiento}" class="form" enctype="multipart/form-data">
@@ -36,8 +39,8 @@
             </form>
         </section>
         <footer id="footer-lenguage">
-            <a  class="a-lenguage a3" th:href="@{/(lang=es)}" > ES </a> 
-            <a  class="a-lenguage a3" th:href="@{/(lang=en)}"> EN </a>
+            <a  class="a-lenguage" th:href="@{/(lang=es)}" > ES </a> 
+            <a  class="a-lenguage" th:href="@{/(lang=en)}"> EN </a>
         </footer>
     </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>VistaDental</title>
+        <meta charset="UTF-8">
+        <link href="/css/nuevoCliente.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"*>
+    </head>
+    <body>
+        <nav>
+            <h1 class="h1"> [[#{cliente.modificar}]] </h1>
+        </nav>
+        <section>
+            <form class="form" th:action="@{/cliente/guardar}"  method="post" th:object="${cliente}">
+                 <input type="hidden" name="idCliente" th:field="*{idCliente}">
+            
+                 
+                <i class="fa fa-user fa-xl"  aria-hidden="true"></i>
+                <input class="input" type="text" name="Usuario" id="Usuario" th:placeholder="#{cliente.usuario}" required="true" th:field="*{usuario}">
+                
+                <br/>
+                
+
+                
+                <i class="fa fa-envelope fa-xl" aria-hidden="true"></i>
+                <input class="input" type="email" name="Correo" th:placeholder="#{cliente.correo}" required="true" th:field="*{correo}">
+                <br/>
+
+                <i class="fa fa-address-card fa-xl" aria-hidden="true"></i>
+                <input class="input" type="text" name="Nombre" th:placeholder="#{cliente.nombre}" th:field="*{nombre}" required="true">
+                <br/>
+
+                <i class="fa fa-address-card fa-xl" aria-hidden="true"></i>
+                <input class="input" type="text" name="primApellido" th:placeholder="#{cliente.primer.apellido}" th:field="*{primerApellido}" required="true">
+                <br/>
+
+                <i class="fa fa-address-card fa-xl" aria-hidden="true"></i>
+                <input class="input" type="text" name="segApellido" th:placeholder="#{cliente.segundo.apellido}" th:field="*{segundoApellido}" required="true">
+                <br/>
+
+                <i class="fa fa-lock fa-xl"  aria-hidden="true"></i>
+                <input class="input" type="text" name="contra" th:placeholder="#{cliente.nueva.contra}" required="true">
+                <br/>
+
+                <i class="fa fa-phone fa-xl" aria-hidden="true"></i>
+                <input class="input" type="tel" name="Tel" th:placeholder="#{cliente.telefono}" th:field="*{telefono}" required="true">
+                <br/>
+                <input class="subir" type="submit" th:name="#{accion.enviar}">
+                
+            </form>  
+            <footer id="footer-lenguage">
+                <a  class="a-lenguage a3" th:href="@{/(lang=es)}" > ES </a> 
+                <a  class="a-lenguage a3" th:href="@{/(lang=en)}"> EN </a>
+            </footer>
+        </section>
+    </body>
+</html>
