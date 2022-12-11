@@ -9,10 +9,16 @@
     </head>
     <body>
 
-            <h1 class="h1"> [[#{e.403}]]  </h1>
-            <a class="a" th:href="@{/}"> [[#{accion.regresar}]] </a>
-            
+        <h1 class="h1"> [[#{e.403}]]  </h1>
+        <div id="div">
+        <a class="a" th:href="@{/}"> [[#{accion.regresar}]] </a>
         
+        </div>
+
+        <footer id="footer-lenguage">
+            <a  class="a-lenguage a3" th:href="@{/(lang=es)}" > ES </a> 
+            <a  class="a-lenguage a3" th:href="@{/(lang=en)}"> EN </a>
+        </footer>
 
 
     </body>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>VistaDental</title>
+        <meta charset="UTF-8">
+        <link href="/css/nuevaCita.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="nav">
+            <h1 class="h1"> [[#{aplicacion.titulo}]] </h1>
+            <a class="a3" th:href="@{/}"> [[#{accion.regresar}]]</a>
+        </nav>
+        <section class="section">
+            <h2 class="h2"> [[#{cita.nuevo}]] </h2>
+            <div id="div-special">    
+                <form method="post" th:action="@{/cita/guardar}" th:object="${cita}"> 
+                    <label class="label">    [[#{fecha}]] </label>
+                    <select class="select" th:field="*{Fecha.idFecha}">
+                        <option   class="select" th:each="fecha : ${fechas}"
+                                  th:value="${fecha.idFecha}"
+                                  th:text="${fecha.fecha}"/>
+                    </select>
+
+                    <label class="label">   [[#{hora}]]  </label>
+                    <select class="select" th:field="*{Hora.idHora}">
+                        <option class="select" th:each="hora : ${horas}"
+                                th:value="${hora.idHora}"
+                                th:text="${hora.hora}"/>
+                    </select>
+
+                    <label class="label">   [[#{tratamiento}]]  </label>
+                    <select name="tratamiento" class="select">
+                    <option   class="select" th:each="tratamiento : ${tratamientos}"
+                                  th:value="${tratamiento.idTratamiento}"
+                                  th:text="${tratamiento.nombre}"
+                                  />
+                    </select>
+                    <div>
+                        <input class="a" type="submit" value="Subir">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer id="footer-lenguage">
+            <a  class="a-lenguage a2" th:href="@{/(lang=es)}" > ES </a> |
+            <a  class="a-lenguage a2" th:href="@{/(lang=en)}"> EN </a>
+        </footer>
+    </body>
+</html>

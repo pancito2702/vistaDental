@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>VistaDental</title>
+        <meta charset="UTF-8">
+            <link href="/css/listadoCitas.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="nav">
+            <h1 class="h1"> Vista Dental </h1>
+            <a th:href="@{/}" class="a3">
+                [[#{accion.regresar}]]
+            </a>
+        </nav>
+        <section class="section">
+            <h2 class="h2"> [[#{usuario.bienvenido}]] <span sec:authentication="name"/></h2>
+
+            <br/> <br/> <br/>
+            <h2 class="h2"> [[#{mis.citas}]]</h2>
+            <div th:if="${citas != null and !citas.empty}">
+                <table class="table">
+                    <tr>
+                        <td class="td"> [[#{fecha}]] </td>
+                        <td class="td"> [[#{hora}]] </td>
+                        <td class="td"> [[#{tratamiento}]] </td>
+                        <td class="td"> [[#{cita.pago}]] </td>
+                        <td class="td"> [[#{cita.id}]] </td>
+
+                    </tr>
+                    <tr th:each="citas : ${citas}">
+                        <td class="td">  [[${citas.fecha.fecha}]] </td>    
+                        <td class="td">  [[${citas.hora.hora}]] </td>    
+                        <td class="td">  [[${citas.tratamiento.nombre}]] </td>    
+                        <td class="td">  [[${citas.totalPagar}]] </td>  
+                        <td class="td">  [[${citas.idCita}]] </td>    
+                    </tr>
+                </table>
+
+            </div>
+            <div id="div" th:if="${citas == null or citas.empty}">
+                <h2 class="h2"> [[#{citas.no.mostrar}]]</h2>  
+            </div>
+        </section>
+
+
+        <br/> <br/> <br/> <br/> 
+        <footer id="footer-lenguage">
+            <a  class="a-lenguage" th:href="@{/(lang=es)}" > ES </a> 
+            <a  class="a-lenguage" th:href="@{/(lang=en)}"> EN </a>
+        </footer>
+    </body>
+</html>

@@ -152,3 +152,20 @@
     background-color: gray;
     transition: 0.5s;
 }
+
+#footer-lenguage {
+   margin-top: 500px;
+   text-align: center;
+   background-color: black;
+}
+
+.a-lenguage {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.a-lenguage:hover {
+    background-color: grey;
+    transition: 0.5s;
+}

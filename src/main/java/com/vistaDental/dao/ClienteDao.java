@@ -9,5 +9,4 @@ public interface ClienteDao extends JpaRepository<Cliente, Long> {
     
 
     
-    
 }

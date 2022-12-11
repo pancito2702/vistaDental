@@ -15,16 +15,19 @@
     text-align: center;
 }
 
+#div {
+    text-align: center;
+     margin-right: 250px;
+}
+
 .a {
-      margin-top: 40px;
+    margin-top: 40px;
     text-align: center;
     background-color: black;
     width: 275px;
     height: 50px;
-    margin-left: 650px;
     box-sizing: border-box;
     border-radius: 50px;
-    text-align: center;
     text-decoration: none;
     line-height: 50px;
     color: #730237;
@@ -36,4 +39,19 @@
     transition: 0.5s;
 }
 
+#footer-lenguage {
+    margin-top: 500px;
+    text-align: center;
+    background-color: black;
+}
 
+.a-lenguage {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.a-lenguage:hover {
+    background-color: grey;
+    transition: 0.5s;
+}

@@ -5,15 +5,19 @@
 <html>
     <head>
         <title>VistaDental</title>
-        <link href="/css/403.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/error.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
 
-            <h1 class="h1"> [[#{e.usuario}]]  </h1>
+        <h1 class="h1"> [[#{e.usuario}]]  </h1>
+        <div id="div">
             <a class="a" th:href="@{/}"> [[#{accion.regresar}]] </a>
-            
-        
+        </div>
 
+        <footer id="footer-lenguage">
+            <a  class="a-lenguage" th:href="@{/(lang=es)}" > ES </a> 
+            <a  class="a-lenguage" th:href="@{/(lang=en)}"> EN </a>
+        </footer>
 
     </body>
 </html>

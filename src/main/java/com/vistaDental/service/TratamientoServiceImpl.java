@@ -36,6 +36,13 @@ public class TratamientoServiceImpl implements TratamientoService {
     public void delete(Tratamiento tratamiento) {
         tratamientoDao.delete(tratamiento);
     }
+
+    @Override
+    public Tratamiento findById(Long idTratamiento) {
+        return tratamientoDao.findById(idTratamiento).orElse(null);
+    }
+
+   
     
 
 }

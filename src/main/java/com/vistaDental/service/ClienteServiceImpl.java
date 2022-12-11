@@ -65,7 +65,10 @@ public class ClienteServiceImpl implements ClienteService, UserDetailsService {
 
        return new User(cliente.getUsuario(), cliente.getContra(), roles);
     }
-    
-   
 
+    @Override
+    public Cliente findByUsuario(String username) {
+        Cliente cliente = clienteDao.findByUsuario(username);
+        return clienteDao.findById(cliente.getIdCliente()).orElse(null);
+    }
 }

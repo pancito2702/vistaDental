@@ -1,0 +1,60 @@
+* {
+    background-color: #4A5159;
+    margin: 0 0 0 0;
+    font-family: Arial;
+}
+
+
+
+.h1 {
+    margin-top: 400px;
+    color:#730237;
+    font-size: 50px;
+    text-align: left;
+    font-style: italic;
+    text-align: center;
+}
+
+.a {
+    margin-top: 40px;
+    text-align: center;
+    background-color: black;
+    width: 275px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: #730237;
+    position: absolute;
+}
+
+.a:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+
+
+#footer-lenguage {
+   margin-top: 500px;
+   text-align: center;
+   background-color: black;
+}
+
+.a-lenguage {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.a-lenguage:hover {
+    background-color: grey;
+    transition: 0.5s;
+}
+
+#div {
+    text-align: center;
+     margin-right: 350px;
+}

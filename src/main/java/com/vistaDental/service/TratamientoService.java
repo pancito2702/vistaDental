@@ -12,5 +12,6 @@ public interface TratamientoService {
     public void save(Tratamiento tratamiento);
 
     public void delete(Tratamiento tratamiento);
-
+    
+    public Tratamiento findById(Long idTratamiento);
 }

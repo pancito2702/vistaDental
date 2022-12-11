@@ -2,6 +2,7 @@ package com.vistaDental.domain;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -50,9 +51,12 @@ public class Cliente implements Serializable {
     @ManyToOne
     private Rol Rol;
     
+    @OneToMany(mappedBy="cliente", cascade = CascadeType.REMOVE)
+    private List<Cita> citas;
+    
     
     public Cliente() {
-        
+
     }
 
     public Cliente(String nombre, String primerApellido, String segundoApellido, String usuario, String contra, String correo, String telefono) {
@@ -76,9 +80,4 @@ public class Cliente implements Serializable {
         this.Rol = Rol;
     }
 
-    
-
-   
-    
-    
 }
