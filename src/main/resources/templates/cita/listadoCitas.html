@@ -26,15 +26,15 @@
                         <td class="td"> [[#{hora}]] </td>
                         <td class="td"> [[#{tratamiento}]] </td>
                         <td class="td"> [[#{cita.pago}]] </td>
-                        <td class="td"> [[#{cita.id}]] </td>
-
+                        <td class="td">  [[#{accion.combinada}]]</td>
                     </tr>
                     <tr th:each="citas : ${citas}">
                         <td class="td">  [[${citas.fecha.fecha}]] </td>    
                         <td class="td">  [[${citas.hora.hora}]] </td>    
                         <td class="td">  [[${citas.tratamiento.nombre}]] </td>    
                         <td class="td">  [[${citas.totalPagar}]] </td>  
-                        <td class="td">  [[${citas.idCita}]] </td>    
+                        <td class="td a-special"> <a class="a" th:href="@{/cita/modificar/} + ${citas.idCita}">  [[#{accion.modificar}]] </a>
+                        <td class="td a-special"> <a class="a" th:href="@{/cita/eliminar/} + ${citas.idCita}"> [[#{accion.eliminar}]] </a>
                     </tr>
                 </table>
 

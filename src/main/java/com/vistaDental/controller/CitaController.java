@@ -19,8 +19,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
-
 @Controller
 @Slf4j
 public class CitaController {
@@ -50,10 +48,10 @@ public class CitaController {
         model.addAttribute("tratamientos", tratamientos);
         return "/cita/nuevaCita";
     }
-    
+
     @GetMapping("/cita/listado")
     public String listadoCitas(Model model) {
-         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         String username = "";
         if (principal instanceof UserDetails userDetails) {
             username = userDetails.getUsername();
@@ -63,7 +61,7 @@ public class CitaController {
         model.addAttribute("citas", citas);
         return "cita/listadoCitas";
     }
-    
+
     @PostMapping("/cita/guardar")
     public String guardarCita(Cita cita, @RequestParam("tratamiento") Long idTratamiento) {
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
@@ -75,7 +73,6 @@ public class CitaController {
         cita.setCliente(cl);
         Tratamiento tr = tratamientoService.findById(idTratamiento);
         cita.setTotalPagar(tr.getCosto());
-        List<Cita> citas = citaService.getCitas();
         citaService.save(cita);
         return "redirect:/";
     }
@@ -83,14 +80,27 @@ public class CitaController {
     @GetMapping("/cita/eliminar/{idCita}")
     public String eliminarCita(Cita cita) {
         citaService.delete(cita);
-        return "redirect:/";
+        return "redirect:/admin";
     }
 
     @GetMapping("/cita/modificar/{idCita}")
     public String modificarCita(Cita cita, Model model) {
         cita = citaService.getCita(cita);
+        List fechas = fechaService.getFechas();
+        List horas = horaService.getHoras();
+        List tratamientos = tratamientoService.getTratamientos();
+        model.addAttribute("fechas", fechas);
+        model.addAttribute("horas", horas);
+        model.addAttribute("tratamientos", tratamientos);
         model.addAttribute("cita", cita);
-        return "cita/modificarCita";
+        return "cita/nuevaCita";
+    }
+
+    @GetMapping("/cita/listado/admin")
+    public String listadoCitasAdmin(Model model) {
+        List citas = citaService.getCitas();
+        model.addAttribute("citas", citas);
+        return "cita/listadoCitasAdmin";
     }
 
 }

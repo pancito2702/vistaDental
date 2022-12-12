@@ -18,23 +18,25 @@
             <h2 class="h2"> [[#{usuario.bienvenido}]] <span sec:authentication="name"/></h2>
 
             <br/> <br/> <br/>
-            <h2 class="h2"> [[#{mis.citas}]]</h2>
+            <h2 class="h2"> [[#{cita.admin}]]</h2>
             <div th:if="${citas != null and !citas.empty}">
                 <table class="table">
                     <tr>
+                        <td class="td"> [[#{usuario}]] </td>
                         <td class="td"> [[#{fecha}]] </td>
                         <td class="td"> [[#{hora}]] </td>
                         <td class="td"> [[#{tratamiento}]] </td>
                         <td class="td"> [[#{cita.pago}]] </td>
-                        <td class="td">  [[#{accion.combinada}]]</td>
+                        <td class="td"> [[#{cita.id}]] </td>
                     </tr>
                     <tr th:each="citas : ${citas}">
+                        <td class="td">  [[${citas.cliente.usuario}]] </td>    
                         <td class="td">  [[${citas.fecha.fecha}]] </td>    
                         <td class="td">  [[${citas.hora.hora}]] </td>    
                         <td class="td">  [[${citas.tratamiento.nombre}]] </td>    
                         <td class="td">  [[${citas.totalPagar}]] </td>  
-                        <td class="td a-special"> <a class="a" th:href="@{/cita/modificar/} + ${citas.idCita}">  [[#{accion.modificar}]] </a>
-                        <td class="td a-special"> <a class="a" th:href="@{/cita/eliminar/} + ${citas.idCita}"> [[#{accion.eliminar}]] </a>
+                        <td class="td">  [[${citas.idCita}]] </td>  
+                       
                     </tr>
                 </table>
 
